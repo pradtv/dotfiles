@@ -10,14 +10,6 @@ source $ZSH/oh-my-zsh.sh
 
 LANG=en_US.UTF-8
 
-if [[ "$OSTYPE" == 'linux-gnu' ]]; then
-  export TERM=xterm-256color
-
-  # Use caps lock key for ESC in Linux
-  xmodmap -e "clear lock"
-  xmodmap -e "keycode 0x42 = Escape"
-fi
-
 alias bx="bundle exec"
 alias jkls="jekyll serve --watch"
 
@@ -32,10 +24,5 @@ export PATH=~/.bin:$PATH
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
 export NVM_DIR=$HOME/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
