@@ -1,11 +1,11 @@
-#### Nithin Bekal's dotfiles
+#### Pradeep T V's dotfiles
 
 This repo will contain the dot files I use to configure my system. The
 [bin](bin) directory contains some utility scripts that get copied to `~/.bin`.
 
 ## Install
 
-    git clone git@github.com:nithinbekal/dotfiles.git
+    git clone git@github.com:pradtv/dotfiles.git
     cd dotfiles
     rake install
 
@@ -18,7 +18,7 @@ Before using Vim with this .vimrc, [Vundle](https://github.com/gmarik/Vundle.vim
 
 To install [Ag](https://github.com/ggreer/the_silver_searcher) for
 [Ag.vim](https://github.com/rking/ag.vim) (apt-get won't work in Elementary OS
-Luna): 
+Luna):
 
     sudo apt-get install -y automake pkg-config libpcre3-dev zlib1g-dev liblzma-dev
     git clone https://github.com/ggreer/the_silver_searcher ag
